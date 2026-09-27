@@ -1,0 +1,54 @@
+.dashboard{
+    display: grid;
+    row-gap: 430px;
+    height: 100vh;
+    /* background-color: aquamarine; */
+   
+}
+
+.dashboard-content{
+    display: grid;   
+    gap: 30px;
+    
+}
+
+.house{
+    display: flex;
+    gap: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    align-items: center;
+}
+.layout-list{
+    display: flex;
+    gap: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    align-items: center;
+}
+.calendar{
+    display: flex;
+    gap: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    align-items: center;
+}
+.progress{
+    display: flex;
+    gap: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    align-items: center;
+}
+.cog{
+    display: flex;
+    gap: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    align-items: center;
+}
+
+.help{
+    font-size: 13px;
+    font-weight: 300;
+}

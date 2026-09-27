@@ -1,0 +1,19 @@
+.Bigflex{
+    display: flex;
+    align-items: flex-start;
+    /* justify-content: space-between; */
+    gap: 200px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 100vh;
+    /* background-color: rgb(183, 243, 243); */
+}
+
+
+.bgcolor{
+    /* background-color: antiquewhite; */
+    height: 120vh;
+    border-radius: 15px;
+    padding: 20px;
+
+}

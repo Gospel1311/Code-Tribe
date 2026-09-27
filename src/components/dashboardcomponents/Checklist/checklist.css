@@ -1,0 +1,94 @@
+.TodaysHabit{
+    border: 1px solid rgba(0, 0, 0, 0.498);
+    /* padding: 50px; */
+    width: 700px;
+    /* border-radius: 20px; */
+    border-collapse: collapse;
+    margin-bottom: 30px;
+
+    tr{
+        border-bottom: 1px solid rgba(0, 0, 0, 0.189);
+    }
+}
+
+.Habit{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.addbutton{
+      cursor: pointer;
+    background-color: green;
+    color: white;
+    font-size: 12px;
+    padding: 6px;
+    font-family: "Lato" sans-serif;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    height: 30px;
+
+}
+
+.Habitcontent{
+    line-height: 1.0;
+    /* margin-bottom:20px; */
+    padding: 20px 0px 20px 0px;
+    
+
+    h2{
+        font-weight: bold;
+    }
+
+    p{
+        font-size: 13px;
+    }
+}
+
+.HabitList{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.flexdisplay{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px 0px 20px;
+
+    td{
+        font-weight: bold;
+        /* font-size: 16px; */
+    }
+
+    p{
+        font-size: 12px;
+        font-weight: 300;
+    }
+    /* input{
+        list-style-type: circle;
+        color: white;
+    } */
+}
+
+.keepgoing{
+    background-color: rgba(221, 244, 255, 0.886);
+    width: 700px;
+    padding: 10px;
+    border-radius: 10px;
+
+    .content{
+        line-height: 1.3;
+
+        h3{
+            font-weight: bold;
+            font-size: 14px;
+        }
+        p{
+            font-size: 12px;
+        }
+    }
+}
