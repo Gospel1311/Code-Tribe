@@ -1,15 +1,17 @@
-import Dashboard from "./pages/Dashboard/dashboard"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-const app = () => {
-    return(
-        <div>
-            <Dashboard />
+import Section from "./components/firstcontent";
+import CalendarLog from "./components/Calendarlogcomponents/calendarcomponent/calendar";
 
-            {/* <div className="bg-red-500 text-white text-4xl p-10">
-      Tailwind Test
-    </div> */}
-        </div>
-    )
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/HabitPage" element={<Section />} />
+        <Route path="/CalendarPage" element={<CalendarLog />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default app
+export default App;

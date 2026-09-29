@@ -1,50 +1,269 @@
-.morning{
-    line-height: 1.2;
-    margin-bottom: 40px;
-h1{
-    font-size: 32px;
-    font-weight: bold;
+.form-heading{
+    line-height: 1.3;
+    margin-bottom: 25px;
+    h1{
+        font-weight: bold;
+        font-size: 18px;
+    }
+    p{
+        font-size: 13px;
+    }
 }
-p{
-    font-size: 14px;
+
+.Form{
+    display: flex;
+    flex-direction: column;
+gap: 5px;
+margin-bottom: 13px;
+
+input {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #D1D5DB;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+label{
+    font-size: 11px;
+    font-weight: bold;
 }
 }
 
-.cards{
-display: flex;
-gap: 45px;
-margin-bottom: 25px;
-cursor: pointer;
-justify-content: center;
+.Category{
+    display: grid;
+    gap: 5px;
+/* margin-bottom: 17px; */
 
-h3{
+label{
+    font-size: 11px;
     font-weight: bold;
-    font-size: 15px;
 }
-p{
+
+select {
+    font-size: 11px;
+    /* font-weight: bold; */
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #D1D5DB;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-weight: 400;
+}
+}
+
+.frequency{
+    margin-top: 13px;
+
+}
+.goal{
+    margin-top: 13px;
+}
+
+
+
+.locationgroup {
+    border: 1px solid #D1D5DB;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 13px;
+    min-width: 0;
+
+
+    .locationgroup legend {
+    font-size: 10px;
+    font-weight: bold;
+    color: #333333;
+    padding: 0 5px;
+}
+
+
+.location {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+.location-option {
+    padding: 10px 15px;
+    border: 1px solid #D1D5DB;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    color: #333333;
+    cursor: pointer;
     font-size: 12px;
+
+
+    location-option.active {
+    background-color: #E8F5E9;
+    border-color: #2E7D32;
+    color: #2E7D32;
+}
 }
 }
 
-.Todayscard{
-    border: 1px solid black;
-    background-color: antiquewhite;
-    padding: 15px;
-    border-radius: 6px;
-    
-    /* width: 250px; */
+.Reminder {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  /* margin: 12px; */
+
+.ReminderHeading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 70px; */
+  /* margin-bottom: 10px; */
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+  gap: 5px;
 }
-.streakcard{
-    border: 1px solid black;
-    background-color: antiquewhite;
-    padding: 15px;
-    border-radius: 6px;
-    /* width: 250px; */
+
+.reminder-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 38px;
+  min-width: 38px;
+  height: 22px;
+  padding: 2px;
+  border: none;
+  border-radius: 20px;
+  appearance: none;
+  cursor: pointer;
+  box-sizing: border-box;
 }
-.beststreakcard{
-    border: 1px solid black;
-    background-color: antiquewhite;
-    padding: 15px;
-    border-radius: 6px;
-    /* width: 250px; */
+
+.reminder-toggle.is-on {
+  background-color: #21865b;
+  justify-content: flex-end;
+}
+
+.reminder-toggle.is-off {
+  background-color: #d1d5db;
+  justify-content: flex-start;
+}
+
+.reminder-toggle .toggle-circle {
+  display: block;
+  width: 15px;
+  min-width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.toggle-circle {
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.InputTime {
+  display: block;
+  width: 90%;
+  box-sizing: border-box;
+  padding: 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  background-color: white;
+  color: black;
+  font-family: "Lato" sans-serif;
+  font-size: 10px;
+}
+}
+
+.Start {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 80%;
+  margin-top: 13px;
+
+
+.Start label {
+  font-size: 13px;
+  font-weight: Bold;
+  color: black;
+}
+
+.InputDate {
+  width: 90%;
+  box-sizing: border-box;
+  padding: 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  background-color: white;
+  color: black;
+  font-family: "Lato" sans-serif;
+  font-size: 10px;
+}
+}
+
+
+
+.Action {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  width: 80%;
+  margin-top: 35px;
+}
+
+.Action button {
+  flex: 1;
+  min-width: 0;
+  padding: 8px;
+  border-radius: 7px;
+  font-size: 11px;
+  font-weight: bold;
+  font-family: "Lato", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+
+@media (max-width: 1024px) {
+  .Action button {
+    padding: 8px 10px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .Action {
+    width: 90%;
+    gap: 10px;
+  }
+
+  .Action button {
+    padding: 10px 10px;
+    font-size: 11px;
+  }
+}
+
+.CancelBtn {
+  background-color: #ffffff;
+  color: black;
+  border: 1px solid #d1d5db;
+}
+
+.CancelBtn:hover {
+  background-color: #f3f4f6;
+}
+
+.CreateBtn {
+  background-color: #21865b;
+  color: #ffffff;
+  border: 1px solid #21865b;
+}
+
+.CreateBtn:hover {
+  background-color: #176b47;
 }
