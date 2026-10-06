@@ -1,0 +1,568 @@
+.create-habit-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 50px 0 70px;
+  background-color: #f8faf9;
+  font-family: "Lato", sans-serif;
+}
+
+.form-heading {
+  width: 80%;
+  margin: 0 auto 35px;
+}
+
+.form-heading h1 {
+  margin: 0 0 8px;
+  font-size: 30px;
+  color: #1f2937;
+}
+
+.form-heading p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 15px;
+}
+
+.HabitForm {
+  width: 80%;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 35px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+}
+
+
+
+.Form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.Form label,
+.Category label,
+.Start label {
+  margin-bottom: 9px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+.Form input,
+.Category select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 13px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  outline: none;
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+  background-color: #ffffff;
+}
+
+.Form input:focus,
+.Category select:focus,
+.TargetInput input:focus,
+.InputTime:focus,
+.InputDate:focus {
+  border-color: #21865b;
+  box-shadow: 0 0 0 2px rgba(33, 134, 91, 0.08);
+}
+
+
+
+.Category {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.Category select {
+  cursor: pointer;
+}
+
+
+
+
+.ActivityGroup {
+  margin: 0 0 30px;
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 9px;
+}
+
+.ActivityGroup legend {
+  padding: 0 8px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+.ActivityText {
+  margin: 3px 0 18px;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.Activity {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.ActivityBtn {
+  padding: 10px 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  background-color: #ffffff;
+  color: #374151;
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.ActivityBtn:hover {
+  border-color: #21865b;
+  color: #21865b;
+}
+
+.ActivityBtn.active {
+  background-color: #21865b;
+  border-color: #21865b;
+  color: #ffffff;
+}
+
+
+
+
+.Target {
+  margin-bottom: 30px;
+  padding: 22px;
+  border-radius: 9px;
+  background-color: #f5faf7;
+  border: 1px solid #dcefe4;
+}
+
+.TargetHeading h2 {
+  margin: 0 0 5px;
+  font-size: 17px;
+  color: #1f2937;
+}
+
+.TargetHeading p {
+  margin: 0 0 20px;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.TargetItem {
+  margin-bottom: 16px;
+}
+
+.TargetItem:last-child {
+  margin-bottom: 0;
+}
+
+.TargetItem label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #374151;
+}
+
+.TargetInput {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.TargetInput input {
+  width: 130px;
+  padding: 11px;
+  box-sizing: border-box;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  outline: none;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+}
+
+.TargetInput span {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+
+/* LOCATION */
+
+.locationgroup {
+  margin: 0 0 30px;
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 9px;
+}
+
+.locationgroup legend {
+  padding: 0 8px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+.location {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.location-option {
+  padding: 10px 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  background-color: #ffffff;
+  color: #374151;
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.location-option:hover {
+  border-color: #21865b;
+  color: #21865b;
+}
+
+.location-option.active {
+  background-color: #21865b;
+  border-color: #21865b;
+  color: #ffffff;
+}
+
+
+
+
+.Reminder {
+  margin-bottom: 30px;
+  padding: 18px 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 9px;
+}
+
+.ReminderHeading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ReminderHeading span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+.reminder-toggle {
+  position: relative;
+  width: 45px;
+  height: 24px;
+  padding: 0;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.reminder-toggle.is-on {
+  background-color: #21865b;
+}
+
+.reminder-toggle.is-off {
+  background-color: #d1d5db;
+}
+
+.toggle-circle {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 18px;
+  height: 18px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+
+.reminder-toggle.is-on .toggle-circle {
+  transform: translateX(21px);
+}
+
+.InputTime {
+  width: 150px;
+  margin-top: 15px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  outline: none;
+  font-family: "Lato", sans-serif;
+}
+
+
+
+.Start {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.InputDate {
+  width: 200px;
+  padding: 11px;
+  box-sizing: border-box;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  outline: none;
+  font-family: "Lato", sans-serif;
+}
+
+
+
+
+.EmailText {
+  margin: 7px 0 0;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+
+
+
+.HabitSummary {
+  margin-bottom: 30px;
+  padding: 22px;
+  border-radius: 9px;
+  background-color: #f8faf9;
+  border: 1px solid #e5e7eb;
+}
+
+.HabitSummary h2 {
+  margin: 0 0 15px;
+  font-size: 17px;
+  color: #1f2937;
+}
+
+.HabitSummary p {
+  margin: 7px 0;
+  font-size: 13px;
+  color: #4b5563;
+}
+
+.SummaryActivities {
+  margin-top: 15px;
+}
+
+.SummaryItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 11px 0;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 13px;
+}
+
+.SummaryItem:last-child {
+  border-bottom: none;
+}
+
+.SummaryItem span {
+  color: #374151;
+}
+
+.SummaryItem strong {
+  color: #21865b;
+}
+
+
+
+
+.Action {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  width: 100%;
+  margin-top: 35px;
+}
+
+.Action button {
+  flex: 1;
+  min-width: 0;
+  padding: 11px;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: "Lato", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.CancelBtn {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #d1d5db;
+}
+
+.CancelBtn:hover {
+  background-color: #f3f4f6;
+}
+
+.CreateBtn {
+  background-color: #21865b;
+  color: #ffffff;
+  border: 1px solid #21865b;
+}
+
+.CreateBtn:hover {
+  background-color: #176b47;
+}
+
+
+
+
+@media (max-width: 1024px) {
+
+  .create-habit-page {
+    padding: 40px 0 60px;
+  }
+
+  .form-heading {
+    width: 85%;
+  }
+
+  .HabitForm {
+    width: 85%;
+    padding: 30px;
+  }
+
+  .form-heading h1 {
+    font-size: 27px;
+  }
+
+}
+
+
+
+
+@media (max-width: 767px) {
+
+  .create-habit-page {
+    padding: 30px 0 50px;
+  }
+
+  .form-heading {
+    width: 90%;
+    margin-bottom: 25px;
+  }
+
+  .form-heading h1 {
+    font-size: 24px;
+  }
+
+  .form-heading p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .HabitForm {
+    width: 90%;
+    box-sizing: border-box;
+    padding: 22px 18px;
+    border-radius: 10px;
+  }
+
+  .Form input,
+  .Category select {
+    font-size: 14px;
+  }
+
+  .ActivityGroup,
+  .locationgroup {
+    padding: 16px;
+  }
+
+  .Activity {
+    gap: 8px;
+  }
+
+  .ActivityBtn,
+  .location-option {
+    padding: 9px 11px;
+    font-size: 12px;
+  }
+
+  .Target {
+    padding: 18px;
+  }
+
+  .TargetInput input {
+    width: 110px;
+  }
+
+  .InputTime,
+  .InputDate {
+    width: 100%;
+  }
+
+  .SummaryItem {
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .Action {
+    gap: 10px;
+    margin-top: 25px;
+  }
+
+  .Action button {
+    padding: 12px 8px;
+    font-size: 13px;
+  }
+
+}
+
+
+
+@media (max-width: 400px) {
+
+  .HabitForm {
+    padding: 18px 14px;
+  }
+
+  .form-heading h1 {
+    font-size: 22px;
+  }
+
+  .ActivityBtn,
+  .location-option {
+    width: 100%;
+  }
+
+  .TargetInput {
+    align-items: stretch;
+  }
+
+  .TargetInput input {
+    width: 100%;
+  }
+
+  .Action {
+    flex-direction: column;
+  }
+
+  .Action button {
+    width: 100%;
+  }
+
+}

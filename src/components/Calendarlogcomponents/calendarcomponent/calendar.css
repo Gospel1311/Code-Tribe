@@ -1,49 +1,51 @@
-/* Main Calendar Log page */
 .calendar-log {
-  width: 100%;
-  max-width: 100%;
+  width: 90%;
+  max-width: 90%;
   box-sizing: border-box;
   padding: 24px;
   color: #26352d;
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Page heading */
+
 .calendar-header {
   margin-bottom: 24px;
 }
 
 .calendar-header h2 {
   margin: 0 0 8px;
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .calendar-header p {
   margin: 0;
   color: #7b857e;
-  font-size: 14px;
+  font-size: 11px;
 }
 
-/* Calendar container */
+
 .calendar-card {
-  width: 100%;
-  max-width: 650px;
-  padding: 20px;
+  width: 90%;
+  max-width: 600px;
+  padding: 15px;
   background-color: #ffffff;
   border: 1px solid #e5eae6;
   border-radius: 12px;
   box-sizing: border-box;
 }
 
-/* Calendar itself */
+
 .calendar-card .react-calendar {
-  width: 100%;
+  width: 90%;
   border: none;
   font-family: inherit;
   background: transparent;
 }
 
-/* Month and navigation arrows */
+
 .calendar-card .react-calendar__navigation {
   display: flex;
   align-items: center;
@@ -83,7 +85,7 @@
   text-decoration: none;
 }
 
-/* Individual dates */
+
 .calendar-card .react-calendar__tile {
   height: 48px;
   padding: 10px 4px;
@@ -99,14 +101,13 @@
   background-color: #eef6f0;
 }
 
-/* Today's date */
+
 .calendar-card .react-calendar__tile--now {
   background-color: #f0f7f2;
   color: #21865b;
   font-weight: 700;
 }
 
-/* Selected date */
 .calendar-card .react-calendar__tile--active,
 .calendar-card .react-calendar__tile--active:enabled:hover,
 .calendar-card .react-calendar__tile--active:enabled:focus {
@@ -114,7 +115,7 @@
   color: #ffffff;
 }
 
-/* Selected date and habit log */
+
 .selected-date-card {
   width: 100%;
   max-width: 650px;
@@ -137,7 +138,7 @@
   font-size: 14px;
 }
 
-/* Empty habit log */
+
 .empty-log {
   margin-top: 20px;
   padding: 18px;
@@ -148,7 +149,7 @@
   text-align: center;
 }
 
-/* Tablet */
+
 @media (max-width: 1024px) {
   .calendar-log {
     padding: 20px;
@@ -160,7 +161,7 @@
   }
 }
 
-/* Mobile */
+
 @media (max-width: 767px) {
   .calendar-log {
     padding: 12px;
